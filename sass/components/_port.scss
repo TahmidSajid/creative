@@ -1,0 +1,82 @@
+.port_tbl{
+    position: relative;
+    margin-bottom: 30px;
+    &:hover .port_overlay{
+        opacity: 1;
+        bottom: 19px;
+    }
+    .port_overlay{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: #5956E8;
+        padding: 19px 0;
+        border-radius: 10px;
+        width: 230px;
+        color: white;
+        opacity: 0;
+        transition: 0.5s;
+        h6{
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 400;
+        }
+        i{
+            padding-left: 10px;
+        }
+    }
+}
+.main_mix{
+    padding-top: 50px;
+}
+.mix_bttn{
+    text-align: center;
+    height: 70px;
+    width: 800px;
+    margin: 0 auto;
+    background: rgba(89, 86, 232, 0.05);
+    border-radius: 10px;
+    button{
+        position: relative;
+        transition: 0.5s;
+        background-color: transparent;
+        border: 0px ;
+        padding: 23px 24px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background-color: #5956E8;
+            content: '';
+            opacity: 1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+        }
+        &:focus{
+            color: #5956E8;
+        }
+        &:focus::after{
+            opacity: 1;
+            width: 100%;
+        }
+}
+}

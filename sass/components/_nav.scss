@@ -1,0 +1,55 @@
+.navbar{
+    padding-top: 30px !important;
+    padding-bottom: 22px !important;
+    .btn{
+        padding: 0px;
+        width: 144px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background-color: #5956E8;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+}
+.navbar-nav{
+    width: 504px;
+    a{
+        padding: 0 !important;
+        font-size: 18px;
+        font-weight: 500;
+        color: #181818;
+        transition: 0.5s;
+        padding: 7px 0px !important;
+        position: relative;
+        &::after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            content: '';
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: #5956E8;
+            opacity: 0;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+}
+        &:hover{
+            color: #5956E8;
+        }
+        &:hover::after{
+            opacity: 1;
+            left: 50%;
+        }
+    }
+}

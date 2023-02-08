@@ -1,0 +1,32 @@
+#banner{
+    background-color: #5956E8;
+    color: white;
+}
+.banner_txt{
+    width: 542px !important;
+    h1{
+        font-size: 65px;
+        font-weight: 700;
+        line-height: 80px;
+        padding-bottom: 17px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        padding-bottom: 15px;
+    }
+    .btn{
+        padding: 0px;
+        height: 48px;
+        width: 144px;
+        background-color: white !important;
+        color: #5956E8;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.banner_img{
+    padding: 182px 0;
+    padding-left: 56px !important;
+}
